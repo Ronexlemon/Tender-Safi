@@ -6,6 +6,7 @@ const LandingPage = () => {
     <div>
         <header>
             {/* Content goes here */}
+            <h2>Hello vite</h2>
         </header>
         <section>
             {/* App Features */}
