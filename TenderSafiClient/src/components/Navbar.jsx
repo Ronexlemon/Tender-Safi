@@ -1,5 +1,5 @@
 import React from 'react';
-import { Logo } from '../assets/images/LogoTenderSafi.svg'
+import Logo  from '../assets/images/LogoTenderSafi.svg'
 
 const Navbar = () => {
   return (
