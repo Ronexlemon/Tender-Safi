@@ -19,8 +19,10 @@ async function main(){
     //Console both Address
     console.log("TenderSafiAddress:",TenderSafiContractDeploy.address);
     console.log("TokenAddress:",TokenContractDeploy.address);
-    //TenderSafiAddress: 0xFC494a1c6962C9060295F12038233AEb0793F183
-    //TokenAddress: 0x8Db1749256e317e55F3C01050A9059D35Ff9a083
+    
+    //TenderSafiAddress: 0x8bBfE8395e299926369fCF03e63f4a254Bb16372
+ ///TokenAddress: 0xe819B15A30D6784032824f0Cb6863C7b82Fc3d16
+    
     
 }
 //main
