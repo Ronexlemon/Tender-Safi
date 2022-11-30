@@ -1,31 +1,31 @@
-// We require the Hardhat Runtime Environment explicitly here. This is optional
-// but useful for running the script in a standalone fashion through `node <script>`.
-//
-// You can also run a script with `npx hardhat run <script>`. If you do that, Hardhat
-// will compile your contracts, add the Hardhat Runtime Environment's members to the
-// global scope, and execute the script.
-const hre = require("hardhat");
+const {ethers} = require("hardhat")
 
-async function main() {
-  const currentTimestampInSeconds = Math.round(Date.now() / 1000);
-  const ONE_YEAR_IN_SECS = 365 * 24 * 60 * 60;
-  const unlockTime = currentTimestampInSeconds + ONE_YEAR_IN_SECS;
+async function main(){
+    //call contract Tendersafi
+    const TenderSafiContract  = await ethers.getContractFactory("Bider");
+   
 
-  const lockedAmount = hre.ethers.utils.parseEther("1");
+    //Deploy TenderSafi Contract
+    const TenderSafiContractDeploy = await TenderSafiContract.deploy();
+    //await TenderSafi 
+    await TenderSafiContractDeploy.deployed();
+     //call contract tokens
+     const TokenContract  = await ethers.getContractFactory("TenderSafiToken");
 
-  const Lock = await hre.ethers.getContractFactory("Lock");
-  const lock = await Lock.deploy(unlockTime, { value: lockedAmount });
-
-  await lock.deployed();
-
-  console.log(
-    `Lock with 1 ETH and unlock timestamp ${unlockTime} deployed to ${lock.address}`
-  );
+    //Deploy Token
+    const TokenContractDeploy = await TokenContract.deploy(TenderSafiContractDeploy.address);
+    //await Token Contract
+    await TokenContractDeploy.deployed();
+    //Console both Address
+    console.log("TenderSafiAddress:",TenderSafiContractDeploy.address);
+    console.log("TokenAddress:",TokenContractDeploy.address);
+    //TenderSafiAddress: 0xFC494a1c6962C9060295F12038233AEb0793F183
+    //TokenAddress: 0x8Db1749256e317e55F3C01050A9059D35Ff9a083
+    
 }
-
-// We recommend this pattern to be able to use async/await everywhere
-// and properly handle errors.
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+//main
+main(()=>process.exit(0)).
+catch((error)=>{
+    console.error(error);
+    process.exit(1);
+})
