@@ -1,12 +1,16 @@
 import React from 'react';
+import HeroText from '../components/HeroText';
+import Navbar from '../components/Navbar';
+import backgroundImage from "./HeroBackgroundImage.svg";
 
 
 const LandingPage = () => {
   return (
     <div>
-        <header>
-            {/* Content goes here */}
-            <h2>Hello vite</h2>
+        <header  style={{ 
+            backgroundImage: `url(${backgroundImage})`}} className="min-h-screen h-[100%] bg-no-repeat bg-cover bg-top bg-slate-100 flex flex-col">
+            <Navbar />
+            <HeroText />
         </header>
         <section>
             {/* App Features */}
