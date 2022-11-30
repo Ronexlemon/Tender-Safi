@@ -1,20 +1,27 @@
-import { useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import "./App.css";
-import LandingPage from "./pages/LandingPage";
+import './App.css';
+import Volunteer from './components/volunteer';
+import Subscription from './components/subscription';
+import Footer from './components/footer';
 
 function App() {
-  const [count, setCount] = useState(0);
-
+  
   return (
-    <div className="App">
-      <Router>
-        <Routes>
-          <Route path="/" element={<LandingPage />}></Route>
-        </Routes>
-      </Router>
+
+    <div>
+      <Volunteer />
+      <Subscription />
+      <Footer />
     </div>
-  );
+
+  
+  )
 }
 
-export default App;
+export default App
+
+
+/*  <div className="App">
+<h1 className="text-3xl font-bold underline font-jakarta">
+Hello world!
+</h1>
+</div> */
