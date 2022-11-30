@@ -1,7 +1,11 @@
+
 import React from "react";
 // import { LogoTenderSafi } from './assets/images/LogoTenderSafi'
 import { Link } from "react-router-dom";
 import { useState } from "react";
+
+import Logo  from '../assets/images/LogoTenderSafi.svg'
+
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
