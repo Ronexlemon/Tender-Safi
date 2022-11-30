@@ -1,4 +1,5 @@
 import React from 'react';
+import Features from '../components/Features';
 import HeroText from '../components/HeroText';
 import Navbar from '../components/Navbar';
 import backgroundImage from "./HeroBackgroundImage.svg";
@@ -13,7 +14,7 @@ const LandingPage = () => {
             <HeroText />
         </header>
         <section>
-            {/* App Features */}
+            <Features />
         </section>
         <section>
             {/* Explore */}
