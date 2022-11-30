@@ -1,16 +1,20 @@
-import { useState } from 'react';
-import './App.css';
+import { useState } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import "./App.css";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="App">
-       <h1 className="text-3xl font-bold underline font-jakarta">
-      Hello world!
-    </h1>
+      <Router>
+        <Routes>
+          <Route path="/" element={<LandingPage />}></Route>
+        </Routes>
+      </Router>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
