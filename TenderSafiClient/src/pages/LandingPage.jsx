@@ -1,4 +1,5 @@
 import React from 'react';
+import Explore from '../components/Explore';
 import Features from '../components/Features';
 import HeroText from '../components/HeroText';
 import Navbar from '../components/Navbar';
@@ -17,7 +18,7 @@ const LandingPage = () => {
             <Features />
         </section>
         <section>
-            {/* Explore */}
+            <Explore />
         </section>
         <section>
             {/* World Users */}
