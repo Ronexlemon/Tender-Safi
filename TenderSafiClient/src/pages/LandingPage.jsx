@@ -2,7 +2,7 @@ import React from 'react';
 import Features from '../components/Features';
 import HeroText from '../components/HeroText';
 import Navbar from '../components/Navbar';
-import backgroundImage from "./HeroBackgroundImage.svg";
+import backgroundImage from "../assets/images/HeroBackgroundImage.svg";
 
 
 const LandingPage = () => {

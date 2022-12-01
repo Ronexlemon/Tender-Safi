@@ -1,4 +1,4 @@
-import image from "./FeatureImage.svg";
+import image from "../assets/images/FeatureImage.svg";
 
 const Features = () => {
   return (
