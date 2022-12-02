@@ -15,7 +15,7 @@ const BiderForm = () => {
   const navigate = useNavigate();
   const { state } = useLocation();
   const { id } = state; // Read values passed on state
-  const ContractBiderAddress = "0x66c56F4Bc01cf330525B276597CA84F8945Dac97"; //"0xb6D6d2e56f6C5E519c871BC682048027171Ba0E1"
+  const ContractBiderAddress = "0x13A44fFe2a9166Ac6dA349837d30B3f47D79b3E8"; //"0xb6D6d2e56f6C5E519c871BC682048027171Ba0E1"
   const Web3ModalRef = useRef();
   const [biderCompanyName, setBiderCompanyName] = useState();
   const [biderContact, setBiderContact] = useState();
@@ -182,6 +182,152 @@ const BiderForm = () => {
           </div>
         </div>
       </div>
+
+
+      {/* <div className="mx-auto w-10/12 my-10">
+        <div ref={getformdiv} className="">
+          <div className="flex justify-between">
+            <div className="flex flex-col">
+              <h1 className="font-jakarta text-3xl font-extrabold">
+                Bid For Tender
+              </h1>
+              <p className="py-4 pr-4 font-josefin">
+                Connect wallet to fill in the form below to bid for the tender.
+              </p>
+            </div>
+
+            <div>
+              <button
+                onClick={DectectWindow}
+                className="px-4 py-2 font-josefin text-white bg-primary-color rounded-full shadow-md hover:shadow-lg"
+              >
+                Connect Wallet
+              </button>
+            </div>
+          </div>
+
+          <div className="bg-gray/30 my-4 p-10 rounded-md">
+            <div className="my-6 w-full">
+              <form
+                onSubmit={handleAddTender}
+                className="flex justify-between w-11/12 mx-auto"
+              >
+                <div>
+                  <div className="w-full">
+                    <label className="font-josefin">Company Name</label>
+                    <br />
+                    <input
+                      className="py-3 pr-24 pl-4 border-2 rounded-lg"
+                      type="text"
+                      id="company"
+                      name="biderCompanyName"
+                      placeHolder="Company Name..."
+                      required
+                      onChange={(e) => setBiderCompanyName(e.target.value)}
+                      value={biderCompanyName}
+                    />
+                  </div>
+
+                  <div>
+                    <label className="font-josefin pt-2">
+                      Tender Description
+                    </label>
+                    <br />
+                    <input
+                      className="py-3 pr-24 pl-4 border-2 rounded-lg"
+                      type="text"
+                      id="description"
+                      name="description"
+                      placeHolder="Tender description..."
+                      required
+                      onChange={(e) => setDescription(e.target.value)}
+                      value={description}
+                    />
+                  </div>
+
+                  <div>
+                    <label className="font-josefin">DeadLine</label>
+                    <br />
+                    <input
+                      className="py-3 px-4 border-2 rounded-lg"
+                      type="date"
+                      id="deadline"
+                      name="deadline"
+                      required
+                      onChange={(e) => setDeadline(e.target.value)}
+                      value={deadline}
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <label className="font-josefin">Contact</label>
+                    <br />
+                    <input
+                      className="py-3 pr-24 pl-4 border-2 rounded-lg"
+                      type="text"
+                      id="contact"
+                      name="contact"
+                      placeHolder="0792271915"
+                      required
+                      onChange={(e) => setContact(e.target.value)}
+                      value={contact}
+                    />
+                  </div>
+
+                  <div>
+                    <label className="font-josefin">Email</label>
+                    <br />
+                    <input
+                      className="py-3 pr-24 pl-4 border-2 rounded-lg"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeHolder="stansmith@gmail.com"
+                      required
+                      onChange={(e) => setEmail(e.target.value)}
+                      value={email}
+                    />
+                  </div>
+
+                  <div>
+                    <label className="font-josefin">Amount</label>
+                    <br />
+                    <input
+                      className="py-3 pr-24 pl-4 border-2 rounded-lg"
+                      type="text"
+                      id="amount"
+                      name="amount"
+                      required
+                      onChange={(e) => setAmount(e.target.value)}
+                      value={amount}
+                    />
+                  </div>
+
+                  <div className="flex gap-4 my-4">
+                    <button
+                      className="px-10 py-2 border-2 border-secondary-color text-secondary-color rounded-full mb-2 font-josefin"
+                      onClick={() => navigate("/Tenders")}
+                    >
+                      Close
+                    </button>
+                    <button
+                      className="px-10 py-2 bg-secondary-color text-[#fff] rounded-full shadow-md mb-2 font-josefin"
+                      onClick={() => {
+                        btnPosts();
+                      }}
+                      type="submit"
+                      value="Submit"
+                    >
+                      Post Tender
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> */}
       
     </div>
   );

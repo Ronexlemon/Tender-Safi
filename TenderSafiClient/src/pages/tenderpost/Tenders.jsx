@@ -30,7 +30,7 @@ const Tenders = () => {
   let btnapprove = useRef(null);
   //let Tenders =[];
   const [Tenders, setTenders] = useState([]);
-  const TenderOwnerAddress = "0x66c56F4Bc01cf330525B276597CA84F8945Dac97";
+  const TenderOwnerAddress = "0x13A44fFe2a9166Ac6dA349837d30B3f47D79b3E8";
   const [tenderslength, setLength] = useState(0);
   const web3ModalRef = useRef();
   const [walletconnect, setWalletConnect] = useState(false);

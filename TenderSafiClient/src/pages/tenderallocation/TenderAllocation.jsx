@@ -10,8 +10,8 @@ function TenderAllocation() {
   const [walletconnect,setWalletConnect] = useState(false);
   const [BidTenders,setBidTenders] = useState([]);
   const [index,setIndex] = useState();
-  const ContractBiderAddress ="0x66c56F4Bc01cf330525B276597CA84F8945Dac97";
-const Web3ModalRef = useRef();
+  const ContractBiderAddress ="0x13A44fFe2a9166Ac6dA349837d30B3f47D79b3E8";
+  const Web3ModalRef = useRef();
 //provide sugner or provider
 const getProviderOrSigner= async(needSigner = false)=>{
   const provider =await  Web3ModalRef.current.connect();

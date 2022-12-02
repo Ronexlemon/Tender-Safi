@@ -34,7 +34,7 @@ const DisplayBids = (props) => {
           <tbody className="text-[#130026]  text-sm font-light">
             {props.bids.map((tender, index) => (
               <>
-                {tender.choice === 1 ? (
+                {tender.choice === 0 ? (
                   <>
                     <tr
                       key={tender.bidIndex}
