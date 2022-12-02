@@ -77,7 +77,7 @@ const NavbarHome = (props) => {
                   Application Status
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink
                   to={"/Tokens"}
                   className={({ isActive }) =>
@@ -86,7 +86,7 @@ const NavbarHome = (props) => {
                 >
                   Buy Token
                 </NavLink>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
@@ -133,7 +133,7 @@ const NavbarHome = (props) => {
                   Application Status
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink
                   to={"/Tokens"}
                   className={({ isActive }) =>
@@ -142,7 +142,7 @@ const NavbarHome = (props) => {
                 >
                   Buy Token
                 </NavLink>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>

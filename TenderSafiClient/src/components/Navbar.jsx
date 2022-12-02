@@ -56,7 +56,7 @@ const Navbar = () => {
         </nav>
       </div>
       <div className="hidden sm:block">
-        <Link to="/Tenders">
+        <Link to="/AvailableTenders">
         <button className="bg-primary-color font-josefin text-white py-2 px-4 rounded-full">Get Started</button>
         </Link>
         
