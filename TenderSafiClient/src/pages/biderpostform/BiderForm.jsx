@@ -10,7 +10,6 @@ import { useNavigate } from "react-router-dom";
 import { providers, Contract } from "ethers";
 import NavbarHome from "../../components/NavbarHome";
 
-
 const BiderForm = () => {
   const navigate = useNavigate();
   const { state } = useLocation();
@@ -97,7 +96,7 @@ const BiderForm = () => {
   return (
     <div className="mainBiderForm">
       <NavbarHome />
-      <div className="connect-wallet-button">
+      {/* <div className="connect-wallet-button">
         <button className="connectWallet">
           <h2 id="connect">
             {" "}
@@ -181,11 +180,10 @@ const BiderForm = () => {
             </form>
           </div>
         </div>
-      </div>
+      </div> */}
 
-
-      {/* <div className="mx-auto w-10/12 my-10">
-        <div ref={getformdiv} className="">
+      <div className="mx-auto w-10/12 my-10">
+        <div className="">
           <div className="flex justify-between">
             <div className="flex flex-col">
               <h1 className="font-jakarta text-3xl font-extrabold">
@@ -197,10 +195,7 @@ const BiderForm = () => {
             </div>
 
             <div>
-              <button
-                onClick={DectectWindow}
-                className="px-4 py-2 font-josefin text-white bg-primary-color rounded-full shadow-md hover:shadow-lg"
-              >
+              <button className="px-4 py-2 font-josefin text-white bg-primary-color rounded-full shadow-md hover:shadow-lg">
                 Connect Wallet
               </button>
             </div>
@@ -230,92 +225,62 @@ const BiderForm = () => {
 
                   <div>
                     <label className="font-josefin pt-2">
-                      Tender Description
+                      Company Registration Number
                     </label>
                     <br />
                     <input
                       className="py-3 pr-24 pl-4 border-2 rounded-lg"
                       type="text"
-                      id="description"
+                      id="biderCompanyRegistrationNumber"
                       name="description"
-                      placeHolder="Tender description..."
-                      required
-                      onChange={(e) => setDescription(e.target.value)}
-                      value={description}
+                      placeHolder="SL002900"
+                      // required
+                      // onChange={(e) => setDescription(e.target.value)}
+                      // value={description}
                     />
                   </div>
 
-                  <div>
-                    <label className="font-josefin">DeadLine</label>
-                    <br />
-                    <input
-                      className="py-3 px-4 border-2 rounded-lg"
-                      type="date"
-                      id="deadline"
-                      name="deadline"
-                      required
-                      onChange={(e) => setDeadline(e.target.value)}
-                      value={deadline}
-                    />
-                  </div>
-                </div>
-                <div>
                   <div>
                     <label className="font-josefin">Contact</label>
                     <br />
                     <input
-                      className="py-3 pr-24 pl-4 border-2 rounded-lg"
+                      className="py-3 px-4 border-2 rounded-lg"
                       type="text"
-                      id="contact"
-                      name="contact"
-                      placeHolder="0792271915"
+                      id="deadline"
+                      name="deadline"
+                      placeholder="0792271915"
                       required
-                      onChange={(e) => setContact(e.target.value)}
-                      value={contact}
+                      onChange={(e) => setBiderContact(e.target.value)}
+                      value={biderContact}
                     />
                   </div>
-
                   <div>
-                    <label className="font-josefin">Email</label>
+                    <label className="font-josefin">
+                      Link To Company Documents
+                    </label>
                     <br />
                     <input
-                      className="py-3 pr-24 pl-4 border-2 rounded-lg"
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeHolder="stansmith@gmail.com"
-                      required
-                      onChange={(e) => setEmail(e.target.value)}
-                      value={email}
-                    />
-                  </div>
-
-                  <div>
-                    <label className="font-josefin">Amount</label>
-                    <br />
-                    <input
-                      className="py-3 pr-24 pl-4 border-2 rounded-lg"
+                      className="py-3 px-4 border-2 rounded-lg"
                       type="text"
-                      id="amount"
-                      name="amount"
+                      id="deadline"
+                      name="deadline"
+                      placeHolder="https://documents.tender.io"
                       required
-                      onChange={(e) => setAmount(e.target.value)}
-                      value={amount}
+                      onChange={(e) => setTypeOfGoods(e.target.value)}
+                      value={bidertypeOfGoods}
                     />
                   </div>
 
-                  <div className="flex gap-4 my-4">
+                  <div className="">
                     <button
                       className="px-10 py-2 border-2 border-secondary-color text-secondary-color rounded-full mb-2 font-josefin"
-                      onClick={() => navigate("/Tenders")}
+                      onClick={() => navigate("/TenderStatus")}
                     >
                       Close
                     </button>
                     <button
                       className="px-10 py-2 bg-secondary-color text-[#fff] rounded-full shadow-md mb-2 font-josefin"
-                      onClick={() => {
-                        btnPosts();
-                      }}
+                      onClick={btnsubmit}
                       type="submit"
                       value="Submit"
                     >
@@ -323,12 +288,12 @@ const BiderForm = () => {
                     </button>
                   </div>
                 </div>
+                <div></div>
               </form>
             </div>
           </div>
         </div>
-      </div> */}
-      
+      </div>
     </div>
   );
 };
