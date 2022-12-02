@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import React from "react";import LogoTenderSafi  from '../assets/images/LogoTenderSafi.svg';
+import LogoTenderSafi  from '../assets/images/LogoTenderSafi.svg';
 import { Link } from "react-router-dom";
 
 
