@@ -394,14 +394,14 @@ const Tenders = () => {
                       Close
                     </button>
                     <button
-                      className="px-10 py-2 bg-secondary-color text-[#000] rounded-full  mb-2 font-josefin"
+                      className="px-10 py-2 bg-secondary-color text-[#fff] rounded-full shadow-md mb-2 font-josefin"
                       onClick={() => {
                         btnPosts();
                       }}
                       type="submit"
                       value="Submit"
                     >
-                      Post
+                      Post Tender
                     </button>
                   </div>
                 </div>

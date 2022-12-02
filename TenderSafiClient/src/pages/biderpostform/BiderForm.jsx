@@ -175,7 +175,7 @@ const BiderForm = () => {
                   Close
                 </button>
                 <button onClick={btnsubmit} className="btnPost">
-                  Post
+                  Post Tender
                 </button>
               </div>
             </form>
