@@ -1,5 +1,4 @@
 import React from "react";
-import "./bider_module.css";
 import { BiderAbi } from "../../abi/bidercontract_abi";
 import Web3Modal from "web3modal";
 import { useRef, useEffect, useState } from "react";
@@ -16,16 +15,17 @@ const BiderForm = () => {
   const { id } = state; // Read values passed on state
   const ContractBiderAddress = "0x13A44fFe2a9166Ac6dA349837d30B3f47D79b3E8"; //"0xb6D6d2e56f6C5E519c871BC682048027171Ba0E1"
   const Web3ModalRef = useRef();
-  const [biderCompanyName, setBiderCompanyName] = useState();
-  const [biderContact, setBiderContact] = useState();
-  const [_tenderIndex, settenderIndex] = useState();
-  const [bidertypeOfGoods, setTypeOfGoods] = useState();
+  const [biderCompanyName, setBiderCompanyName] = useState("");
+  const [biderCompanyRegistrationNumber, setBiderCompanyRegistrationNumber] = useState("");
+  const [biderContact, setBiderContact] = useState("");
+  const [_tenderIndex, settenderIndex] = useState("");
+  const [bidertypeOfGoods, setTypeOfGoods] = useState("");
 
   //provide sgner or provider
   const getProviderOrSigner = async (needSigner = false) => {
     const provider = await Web3ModalRef.current.connect();
     const web3Provider = new providers.Web3Provider(provider);
-    // check if network is goerli
+    // check if network is Goerli
     const { chainId } = await web3Provider.getNetwork();
     if (chainId !== 5) {
       window.alert("Change network to Goerli");
@@ -41,7 +41,7 @@ const BiderForm = () => {
   //call the metamask on page reload
   useEffect(() => {
     Web3ModalRef.current = new Web3Modal({
-      network: "goerli",
+      network: "Goerli",
       providerOptions: {},
       disableInjectedProvider: false,
       cacheProvider: false,
@@ -216,7 +216,7 @@ const BiderForm = () => {
                       type="text"
                       id="company"
                       name="biderCompanyName"
-                      placeHolder="Company Name..."
+                      placeholder="Company Name..."
                       required
                       onChange={(e) => setBiderCompanyName(e.target.value)}
                       value={biderCompanyName}
@@ -233,10 +233,10 @@ const BiderForm = () => {
                       type="text"
                       id="biderCompanyRegistrationNumber"
                       name="description"
-                      placeHolder="SL002900"
-                      // required
-                      // onChange={(e) => setDescription(e.target.value)}
-                      // value={description}
+                      placeholder="SL002900"
+                      required
+                      onChange={(e) => setBiderCompanyRegistrationNumber(e.target.value)}
+                      value={biderCompanyRegistrationNumber}
                     />
                   </div>
 
@@ -264,7 +264,7 @@ const BiderForm = () => {
                       type="text"
                       id="deadline"
                       name="deadline"
-                      placeHolder="https://documents.tender.io"
+                      placeholder="https://documents.tender.io"
                       required
                       onChange={(e) => setTypeOfGoods(e.target.value)}
                       value={bidertypeOfGoods}
@@ -284,7 +284,7 @@ const BiderForm = () => {
                       type="submit"
                       value="Submit"
                     >
-                      Post Tender
+                      Bid Tender
                     </button>
                   </div>
                 </div>
