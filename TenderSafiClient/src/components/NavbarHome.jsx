@@ -1,8 +1,7 @@
 import { NavLink, Link, useNavigate } from "react-router-dom";
 import React, { useState } from "react";
 import Logo from "../assets/images/LogoTenderSafi.svg";
-import { TiTick } from "react-icons/ti";
-import { FaClipboardList } from "react-icons/fa";
+
 
 const NavbarHome = (props) => {
   const navigate = useNavigate();
@@ -15,9 +14,9 @@ const NavbarHome = (props) => {
   };
 
   let activeLink =
-    "self-center font-josefin text-secondary-color hover:opacity-80 w-[100%] min-w-[100px]";
+    "self-center font-josefin text-secondary-color hover:opacity-80 w-[100%] min-w-[100px] text-base";
   let normalLink =
-    "self-center font-josefin hover:text-secondary-color w-[100%] min-w-[100px]";
+    "self-center font-josefin hover:text-secondary-color w-[100%] min-w-[100px] text-base";
 
  
 

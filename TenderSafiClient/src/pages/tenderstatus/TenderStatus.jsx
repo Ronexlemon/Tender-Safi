@@ -1,5 +1,4 @@
 import React from 'react';
-import './TenderStatus.css';
 import { BiderAbi } from "../../abi/bidercontract_abi";
 import Web3Modal from "web3modal";
 import { useRef, useEffect, useState } from "react";
