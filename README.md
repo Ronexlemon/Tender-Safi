@@ -13,6 +13,7 @@ Bringing trust and transparency to procurement of services
  - [Requirements](#requirements)
  - [Installation Process](#installation-Process)
  - [Live Link](#Live-Link)
+ - [Presentation](#Presentation)
  - [Technology  Used](#technology-Used)
  - [License](#license)
  - [Authors Info](#Authors-Info)
@@ -54,6 +55,9 @@ Figma Design -[TenderSafi-Web-app](https://www.figma.com/file/fxzefSk00z49RSq63v
 
 ### Live Link
 - Click this link to view the live application https://tender-safi-chain-kuwtu3ywz-ronexlemon.vercel.app/
+
+### Presentation
+- Click this link to view the presentation https://www.canva.com/design/DAFTi-XRj6w/Uv6hVM3Dwja30YksU2GPpQ/view?utm_content=DAFTi-XRj6w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 ### Technology  Used
 * REACT - which was used to develope the structure off the pages.
