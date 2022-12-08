@@ -13,6 +13,7 @@ Bringing trust and transparency to procurement of services
  - [Requirements](#requirements)
  - [Installation Process](#installation-Process)
  - [Live Link](#Live-Link)
+ - [Live Demo](#Live-Demo)
  - [Presentation](#Presentation)
  - [Technology  Used](#technology-Used)
  - [License](#license)
