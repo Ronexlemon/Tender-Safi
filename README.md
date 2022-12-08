@@ -65,6 +65,7 @@ Figma Design -[TenderSafi-Web-app](https://www.figma.com/file/fxzefSk00z49RSq63v
 * TAILWINDCSS - which was used to style the User Interface.
 * SOLIDITY - which was used to create the smart contract.
 * HARDHAT - which was used as development environment for the smart contract.
+* GOERLI TESTNET - which was used to deploy the smart contract.
 * VERCEL - which was used to deploy the project. Heroku for backend and vercel for frontend.
 [Go Back to the top](#TenderSafi-Web-app)
 
