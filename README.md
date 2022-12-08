@@ -4,7 +4,7 @@ Bringing trust and transparency to procurement of services
 ## By Dennis Kimathi | Antony Kimani | Ronnex Ondimu | Mary Usaji | Obed Omwega | Mutua Solomon 
 
 ## Screenshot
- ![image](./client/src/assets/images/HeroSection.png)
+ ![image](./TenderSafiClient/src/assets/images/HeroSection.png)
 
  ## Table of Content
  - [Description](#description)
