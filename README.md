@@ -48,6 +48,7 @@ Figma Design -[TenderSafi-Web-app](https://www.figma.com/file/fxzefSk00z49RSq63v
  ### Installation Process
  ****
 * Clone to the repo : git clone https://github.com/Ronexlemon/Tender-Safi
+* Install the necessary dependencies ``` npm install```
 * Run the following command to start the vite app ``` npm run dev```
 
  ****
